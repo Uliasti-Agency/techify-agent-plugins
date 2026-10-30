@@ -2,7 +2,7 @@
   "name": "techify",
   "displayName": "Techify",
   "version": "1.0.0",
-  "description": "Hire on Techify from Claude Code: turn job descriptions into drafts, review drafts from your ATS, publish after you approve the price, read applications.",
+  "description": "Techify for Claude Code: companies turn job descriptions into drafts and publish after approving the price; candidates save their CV, find Swiss tech jobs and apply after confirming each application.",
   "author": {
     "name": "Techify",
     "email": "hello@techify.work",

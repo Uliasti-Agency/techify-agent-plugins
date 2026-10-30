@@ -1,17 +1,22 @@
 ---
 name: techify
-description: Start here for anything about the user's Techify workspace. Explains what Techify is, which MCP tool does what, and the rules for drafts, publishing and candidate data. Use when the user mentions Techify, posting or publishing a tech job in Switzerland, job drafts, their ATS sync, applications or candidates on Techify, or job ad invoices.
+description: Start here for anything about Techify, for companies and for candidates. Explains what Techify is, which MCP tool does what, and the rules for drafts, publishing, applying and personal data. Use when the user mentions Techify, posting or publishing a tech job in Switzerland, job drafts, their ATS sync, applications, job ad invoices, or looking for and applying to tech jobs in Switzerland on Techify.
 ---
 
 # Techify
 
 Techify (https://techify.work) is a job board for tech jobs in Switzerland. Companies have a workspace with a team (owners, admins, recruiters), jobs, drafts, connected job sources (Greenhouse, Lever, Ashby, Personio, RSS feeds, the Techify API) and billing. A job ad costs CHF 95 and is live for 60 days. Companies pay by card in Stripe Checkout, or on invoice once Techify approved them for it.
 
-You reach it through the `techify` MCP server. You act as the signed-in member, inside one workspace, with that member's role. Every tool call is logged in the workspace.
+You reach it through the `techify` MCP server. Which tools you get depends on the account the user signed in with:
+
+- **Company account**: you act as one member of one company workspace, with that member's role. Tools start with `get-context`. Everything below this list is about this case.
+- **Candidate account**: you act for one job seeker. Tools start with `get-profile`. Follow the `job-search` and `apply-to-jobs` skills.
+
+Every tool call is logged.
 
 ## Before the first task in a session
 
-1. Call `get-context`. It gives you the member, the role and its permissions, job counts, the price and how this company pays. Keep it in mind; do not call it again unless the session is long.
+1. Call `get-context` (company) or `get-profile` (candidate); the tool list tells you which one exists. Keep the result in mind; do not call it again unless the session is long.
 2. If it fails with an authentication error, follow the `setup` skill.
 
 ## Which tool for which task
@@ -31,7 +36,9 @@ You reach it through the `techify` MCP server. You act as the signed-in member, 
 | Team members | `list-team` | |
 | Compare with the market | `search-market` | Live jobs of all companies on Techify. |
 
-Skills for common jobs: `draft-job`, `review-drafts`, `publish-jobs`, `applications`, `hiring-report`.
+Skills for companies: `draft-job`, `review-drafts`, `publish-jobs`, `applications`, `hiring-report`. Skills for candidates: `job-search`, `apply-to-jobs`.
+
+Freelance projects are coming to Techify. Candidates can already mark themselves open to projects (`update-profile`, `openTo`); there are no project listings yet, so do not promise any.
 
 ## Rules
 

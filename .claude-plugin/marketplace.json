@@ -12,7 +12,7 @@
     {
       "name": "techify",
       "source": "./techify",
-      "description": "Hire on Techify from Claude Code: turn job descriptions into drafts, review drafts from your ATS, publish after you approve the price, read applications.",
+      "description": "Techify for Claude Code: companies turn job descriptions into drafts and publish after approving the price; candidates save their CV, find Swiss tech jobs and apply after confirming each application.",
       "category": "productivity",
       "tags": ["jobs", "hiring", "recruiting", "switzerland", "mcp", "techify"]
     }
