@@ -1,0 +1,16 @@
+{
+  "name": "techify-plugins",
+  "owner": {
+    "name": "Techify"
+  },
+  "metadata": {
+    "description": "Official Techify plugins for Cursor"
+  },
+  "plugins": [
+    {
+      "name": "techify",
+      "source": "./techify",
+      "description": "Hire on Techify from Cursor"
+    }
+  ]
+}

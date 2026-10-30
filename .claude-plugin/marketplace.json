@@ -1,0 +1,20 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "techify-plugins",
+  "owner": {
+    "name": "Techify",
+    "url": "https://techify.work"
+  },
+  "metadata": {
+    "description": "Official Techify plugins for Claude Code"
+  },
+  "plugins": [
+    {
+      "name": "techify",
+      "source": "./techify",
+      "description": "Hire on Techify from Claude Code: turn job descriptions into drafts, review drafts from your ATS, publish after you approve the price, read applications.",
+      "category": "productivity",
+      "tags": ["jobs", "hiring", "recruiting", "switzerland", "mcp", "techify"]
+    }
+  ]
+}

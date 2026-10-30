@@ -1,0 +1,19 @@
+{
+  "name": "techify-plugins",
+  "interface": {
+    "displayName": "Techify"
+  },
+  "plugins": [
+    {
+      "name": "techify",
+      "source": {
+        "source": "local",
+        "path": "./techify"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      }
+    }
+  ]
+}

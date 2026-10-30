@@ -1,0 +1,18 @@
+{
+  "name": "techify",
+  "version": "1.0.0",
+  "description": "Hire on Techify from Codex",
+  "author": {
+    "name": "Techify"
+  },
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Techify",
+    "shortDescription": "Hire on Techify from Codex",
+    "capabilities": [
+      "Read",
+      "Write"
+    ]
+  }
+}

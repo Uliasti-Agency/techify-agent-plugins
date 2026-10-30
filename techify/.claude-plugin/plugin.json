@@ -1,0 +1,20 @@
+{
+  "name": "techify",
+  "displayName": "Techify",
+  "version": "1.0.0",
+  "description": "Hire on Techify from Claude Code: turn job descriptions into drafts, review drafts from your ATS, publish after you approve the price, read applications.",
+  "author": {
+    "name": "Techify",
+    "email": "hello@techify.work",
+    "url": "https://techify.work"
+  },
+  "homepage": "https://techify.work/integrations/ai",
+  "repository": "https://github.com/Uliasti-Agency/techify-agent-plugins",
+  "license": "MIT",
+  "keywords": ["jobs", "hiring", "recruiting", "job board", "switzerland", "mcp"],
+  "icon": "./logo.svg",
+  "documentationUrl": "https://techify.work/integrations/ai",
+  "supportUrl": "mailto:hello@techify.work",
+  "privacyPolicyUrl": "https://techify.work/privacy",
+  "termsOfServiceUrl": "https://techify.work/terms"
+}
