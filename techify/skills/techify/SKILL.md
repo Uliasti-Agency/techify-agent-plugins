@@ -26,14 +26,15 @@ Every tool call is logged.
 | Overview, permissions, price | `get-context` | Call first. |
 | Find jobs by status or title | `search-jobs` | `status`: live, inactive, draft, all. |
 | Full details of one job | `get-job` | Description as text, salary, tags, dates, application count. |
-| Write a new draft or update one | `save-draft` | Free and private. Same `reference` updates the draft. |
+| Write a new draft or update one | `save-draft` | Free and private. Same `reference` updates the draft; fields left out keep their value. `applyUrl` only when candidates should apply on the company's site. |
 | Publish a draft | `publish-draft` | Two steps: quote without `confirm`, publish with `confirm=true`. Owners and admins only. |
 | Remove a draft | `discard-draft` | Needs `confirm=true`. Owners and admins only. |
 | Pause or resume a live job | `set-job-visibility` | The paid period keeps running while paused. |
 | Applications | `list-applications` | Personal data. See rules. |
 | Connected ATS and feeds | `list-sources`, `sync-source` | Sync creates or updates drafts only. |
 | Payment method, open charges, invoices | `billing-overview` | |
-| Team members | `list-team` | |
+| Team members | `list-team`, `invite-member` | Inviting: owners and admins only. |
+| Introductions to matching people (Connect) | `connect-overview`, `start-connect` | Costs per accepted introduction: quote without `confirm`, start with `confirm=true`. Owners and admins only. |
 | Compare with the market | `search-market` | Live jobs of all companies on Techify. |
 
 Skills for companies: `draft-job`, `review-drafts`, `publish-jobs`, `applications`, `hiring-report`. Skills for candidates: `job-search`, `apply-to-jobs`.
